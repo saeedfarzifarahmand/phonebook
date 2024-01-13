@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Management</title>
+    <script src="http://localhost:3000"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>User Information</h2>
+        <form id="userForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description"></textarea>
+
+            <button type="submit">Save</button>
+        </form>
+        <div id="searchAndDelete">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search">
+            <button onclick="searchUser()">Search</button>
+            <button onclick="deleteUser()">Delete</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
